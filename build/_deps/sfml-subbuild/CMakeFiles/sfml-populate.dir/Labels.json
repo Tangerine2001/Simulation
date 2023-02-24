@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate"
+		},
+		{
+			"file" : "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-subbuild/CMakeFiles/f4d3cf15e31dfb5f88dcbbb5369b3349/sfml-populate.rule"
+		},
+		{
+			"file" : "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-subbuild/CMakeFiles/a1959f83f6d39de22587bf8b8f79a89d/sfml-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-subbuild/CMakeFiles/12286b37ab85fc325f18ef5b145ac00b/sfml-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-subbuild/CMakeFiles/12286b37ab85fc325f18ef5b145ac00b/sfml-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-subbuild/CMakeFiles/12286b37ab85fc325f18ef5b145ac00b/sfml-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-subbuild/CMakeFiles/12286b37ab85fc325f18ef5b145ac00b/sfml-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-subbuild/CMakeFiles/12286b37ab85fc325f18ef5b145ac00b/sfml-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-subbuild/CMakeFiles/12286b37ab85fc325f18ef5b145ac00b/sfml-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-subbuild/CMakeFiles/12286b37ab85fc325f18ef5b145ac00b/sfml-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-subbuild/CMakeFiles/12286b37ab85fc325f18ef5b145ac00b/sfml-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sfml-populate"
+		],
+		"name" : "sfml-populate"
+	}
+}
