@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\94a4950e1c86b6bf3168405be84208d1\copy_assets.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\maxta\VSCodeProjects\Simulation\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\copy_assets" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E5630BD7-92DB-300F-970D-88C3972DBA81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+^C:\USERS\MAXTA\VSCODEPROJECTS\SIMULATION\BUILD\WINDOWS\CMAKEFILES\94A4950E1C86B6BF3168405BE84208D1\GENERATE.STAMP.RULE
+setlocal
+C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simulation -BC:/Users/maxta/VSCodeProjects/Simulation/build/Windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/Simulation.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-src/cmake/Modules/FindFLAC.cmake
+C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-src/cmake/Modules/FindVORBIS.cmake
+C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-src/src/SFML/Audio/CMakeLists.txt
+C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-src/tools/windows/resource.rc.in
+C:/tools/cmake-3.25.2-windows-x86_64/share/cmake-3.25/Modules/FindOpenAL.cmake
+C:/tools/cmake-3.25.2-windows-x86_64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake
+C:/tools/cmake-3.25.2-windows-x86_64/share/cmake-3.25/Modules/FindPackageMessage.cmake
