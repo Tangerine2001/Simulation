@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-subbuild\CMakeFiles\f4d3cf15e31dfb5f88dcbbb5369b3349\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-subbuild\CMakeFiles\c73ba4aa6846d9cad1af13d214cc71e8\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{3F3513AD-A318-3747-A478-D29E0150EC3C}</UniqueIdentifier>
+      <UniqueIdentifier>{ADE5BE3C-ED94-3E1D-9C30-7CD2A2058083}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

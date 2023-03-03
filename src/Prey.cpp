@@ -1,12 +1,26 @@
+#include <iostream>
+
 #include <Prey.hpp>
+#include <Random.hpp>
 #include <SFML/Graphics.hpp>
 
-Prey::Prey()
+
+void Prey::Init(int id, float speed)
 {
-    // sf::Texture texture;
-    // texture.loadFromFile("../../assets/prey0.png");
-    // this->sprite.setTexture(texture);
+    this->id = id;
+    this->speed = speed;
     this->type = "prey";
-    this->texture.loadFromFile("../../assets/prey0.png");
-    this->sprite.setTexture(this->texture);
+
+    // Init random variables
+    this->x = Random::Range(-1.0f, 1.0f);
+    this->y = Random::Range(-1.0f, 1.0f);
+}
+
+Prey::Prey() { Init(-1, Random::Range(0.5f, 1.0f)); }
+Prey::Prey(int id, float speed) { Init(id, speed); }
+
+void Prey::Update()
+{
+    this->position.x += this->speed * this->x;
+    this->position.y += this->speed * this->y;
 }

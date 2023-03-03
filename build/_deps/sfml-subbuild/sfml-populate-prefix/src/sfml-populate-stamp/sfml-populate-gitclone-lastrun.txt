@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=C:/tools/cmake-3.25.2-windows-x86_64/bin/cmake.exe;-P;C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-subbuild/sfml-populate-prefix/tmp/sfml-populate-gitclone.cmake
-source_dir=C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src
-work_dir=C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps
+command=C:/tools/cmake-3.25.2-windows-x86_64/bin/cmake.exe;-P;C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-subbuild/sfml-populate-prefix/tmp/sfml-populate-gitclone.cmake
+source_dir=C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src
+work_dir=C:/Users/maxta/VSCodeProjects/Simulation/build/_deps
 repository=https://github.com/SFML/SFML.git
 remote=origin
 init_submodules=TRUE

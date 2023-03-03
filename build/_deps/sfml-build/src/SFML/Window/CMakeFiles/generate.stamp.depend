@@ -1,6 +1,6 @@
 # CMake generation dependency list for this directory.
-C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/src/SFML/Window/CMakeLists.txt
-C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/tools/windows/resource.rc.in
+C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/src/SFML/Window/CMakeLists.txt
+C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/tools/windows/resource.rc.in
 C:/tools/cmake-3.25.2-windows-x86_64/share/cmake-3.25/Modules/FindOpenGL.cmake
 C:/tools/cmake-3.25.2-windows-x86_64/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake
 C:/tools/cmake-3.25.2-windows-x86_64/share/cmake-3.25/Modules/FindPackageMessage.cmake

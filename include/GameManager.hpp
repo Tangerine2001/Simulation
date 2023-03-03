@@ -1,25 +1,33 @@
 #ifndef GAMEMANAGER_HPP
 #define GAMEMANAGER_HPP
 
-#include <GameObject.hpp>
+#include <Prey.hpp>
+// #include <Predator.hpp>
 
 class GameManager
 {
     public:
         int numPreys;
         int numPredators;
+        int windowWidth;
+        int windowHeight;
         
-        static inline std::vector<GameObject> gameObjects;
+        static inline std::vector<Prey> preys;
+        // static inline std::vector<Predator> predators;
         std::vector<sf::Texture> textures;
 
-        void Init(int numPreys, int numPredators);
+        void Init(int numPreys, int numPredators, int windowWidth, int windowHeight);
 
         GameManager();
-        GameManager(int numPreys, int numPredators);
+        GameManager(int numPreys, int numPredators, int windowWidth, int windowHeight);
 
-        void start();
+        void Start();
+        std::vector<GameObject> Update();
     protected:
     private:
+        float boundaryMargin = 1.0f;
+
+        void HandleOutOfBounds(GameObject &gameObject);
 };
 
 #endif

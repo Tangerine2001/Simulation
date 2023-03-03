@@ -1,13 +1,12 @@
 #include <GameObject.hpp>
-#include <random>
+#include <stdlib.h>
 
 GameObject::GameObject()
 {
     // Randomize the vector x, y between the values 100 and 200 for both
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(100, 200);
-    Init(Vector2(dis(gen), dis(gen)));
+    int randX = rand() % 100 + 100;
+    int randY = rand() % 100 + 100;
+    Init(Vector2(randX, randY));
 }
 
 GameObject::GameObject(Vector2 position)
@@ -19,4 +18,9 @@ void GameObject::Init(Vector2 position)
 {
     this->position = position;
     this->sprite.setPosition(position.x, position.y);
+}
+
+void GameObject::Update()
+{
+    // Do nothing
 }

@@ -6,37 +6,14 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
-    window.setFramerateLimit(144);
+    int width = 800;
+    int height = 600;
 
-    sf::CircleShape shape(10.f);
-    shape.setFillColor(sf::Color::Green);
-    // Print shape's position
-    // std::cout << shape.getPosition().x << ", " << shape.getPosition().y << std::endl;
+    sf::RenderWindow window(sf::VideoMode(width, height), "My window");
+    window.setFramerateLimit(60);
 
-    // Create a GameManger object and start the game
-    // Vector2 position(0, 0);
-    sf::Texture preyTexture;
-    preyTexture.loadFromFile("../../assets/prey0.png");
-    sf::Texture predatorTexture;
-    predatorTexture.loadFromFile("../../assets/prey0.png");
-
-    GameManager gameManager(10, 1);
-    gameManager.start();
-
-    // Set the textures for each of the sprites
-    // for (GameObject gameObject : GameManager::gameObjects)
-    // {
-    //     gameObject.sprite.setTexture(preyTexture);
-    // }
-
-    // Print hello world
-    // std::cout << "Hello world!" << std::endl;
-
-    // Create a sprite based on assets/prey0.png
-    // sf::Sprite sprite;
-    // sprite.setTexture(texture);
-    // sprite.setPosition(300, 300);
+    GameManager gameManager(10, 1, width, height);
+    gameManager.Start();
 
     while (window.isOpen())
     {
@@ -49,24 +26,9 @@ int main()
         }
         window.clear();
 
-        // window.draw(shape);
-        // window.draw(sprite);
-        
-        // Iterate through gameObjects and draw their sprites
-        for (GameObject gameObject : GameManager::gameObjects)
+        std::vector<GameObject> gameObjects = gameManager.Update();
+        for (GameObject gameObject : gameObjects)
         {
-            // Vector2 position = gameObject.position;
-            // sf::Sprite sprite;
-            // sprite.setPosition(position.x, position.y);
-            // gameObject.sprite.setTexture(preyTexture);
-            // if (gameObject.type == "prey")
-            // {
-            //     gameObject.sprite.setTexture(preyTexture);
-            // }
-            // else if (gameObject.type == "predator")
-            // {
-            //     gameObject.sprite.setTexture(predatorTexture);
-            // }
             window.draw(gameObject.sprite);
         }
 

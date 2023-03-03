@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{01C5A9C0-A223-3D5C-A72E-16A1886AE089}</ProjectGuid>
+    <ProjectGuid>{9AF12F06-32AE-3ABC-BA8D-91D1E0578097}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\lib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\lib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sfml-graphics.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sfml-graphics-d-2</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\lib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\lib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sfml-graphics.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sfml-graphics-2</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\lib\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\lib\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sfml-graphics.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sfml-graphics-2</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\lib\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\lib\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sfml-graphics.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sfml-graphics-2</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
@@ -86,8 +86,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/extlibs/headers/stb_image" /external:I "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/extlibs/headers/glad/include" /external:I "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/extlibs/headers/freetype2"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/extlibs/headers/stb_image" /external:I "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/extlibs/headers/glad/include" /external:I "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/extlibs/headers/freetype2"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -105,10 +105,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;STBI_FAILURE_USERMSG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";SFML_GRAPHICS_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -121,8 +121,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/Debug/sfml-graphics-d.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/Debug/sfml-graphics.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/Debug/sfml-graphics-d.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/Debug/sfml-graphics.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -131,8 +131,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/extlibs/headers/stb_image" /external:I "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/extlibs/headers/glad/include" /external:I "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/extlibs/headers/freetype2"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/extlibs/headers/stb_image" /external:I "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/extlibs/headers/glad/include" /external:I "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/extlibs/headers/freetype2"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
@@ -150,10 +150,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STBI_FAILURE_USERMSG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";SFML_GRAPHICS_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -166,8 +166,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/Release/sfml-graphics.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/Release/sfml-graphics.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/Release/sfml-graphics.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/Release/sfml-graphics.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -176,8 +176,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/extlibs/headers/stb_image" /external:I "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/extlibs/headers/glad/include" /external:I "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/extlibs/headers/freetype2"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/extlibs/headers/stb_image" /external:I "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/extlibs/headers/glad/include" /external:I "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/extlibs/headers/freetype2"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
@@ -195,10 +195,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STBI_FAILURE_USERMSG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";SFML_GRAPHICS_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -211,8 +211,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/MinSizeRel/sfml-graphics.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/MinSizeRel/sfml-graphics.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/MinSizeRel/sfml-graphics.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/MinSizeRel/sfml-graphics.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -221,8 +221,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/extlibs/headers/stb_image" /external:I "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/extlibs/headers/glad/include" /external:I "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/extlibs/headers/freetype2"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/extlibs/headers/stb_image" /external:I "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/extlibs/headers/glad/include" /external:I "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/extlibs/headers/freetype2"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -239,10 +239,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;STBI_FAILURE_USERMSG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";SFML_GRAPHICS_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\stb_image;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\glad\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\extlibs\headers\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -255,8 +255,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/RelWithDebInfo/sfml-graphics.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/RelWithDebInfo/sfml-graphics.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/RelWithDebInfo/sfml-graphics.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/RelWithDebInfo/sfml-graphics.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -264,11 +264,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/src/SFML/Graphics/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/src/SFML/Graphics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simlulation -BC:/Users/maxta/VSCodeProjects/Simlulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/src/SFML/Graphics/CMakeFiles/generate.stamp
+C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simulation -BC:/Users/maxta/VSCodeProjects/Simulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/src/SFML/Graphics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -276,12 +276,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\cmake\Modules\FindFreetype.cmake;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\src\SFML\Graphics\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\cmake\Modules\FindFreetype.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\src\SFML\Graphics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/src/SFML/Graphics/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/src/SFML/Graphics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simlulation -BC:/Users/maxta/VSCodeProjects/Simlulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/src/SFML/Graphics/CMakeFiles/generate.stamp
+C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simulation -BC:/Users/maxta/VSCodeProjects/Simulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/src/SFML/Graphics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -289,12 +289,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\cmake\Modules\FindFreetype.cmake;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\src\SFML\Graphics\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\cmake\Modules\FindFreetype.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\src\SFML\Graphics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/src/SFML/Graphics/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/src/SFML/Graphics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simlulation -BC:/Users/maxta/VSCodeProjects/Simlulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/src/SFML/Graphics/CMakeFiles/generate.stamp
+C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simulation -BC:/Users/maxta/VSCodeProjects/Simulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/src/SFML/Graphics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -302,12 +302,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\cmake\Modules\FindFreetype.cmake;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\src\SFML\Graphics\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\cmake\Modules\FindFreetype.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\src\SFML\Graphics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/src/SFML/Graphics/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/src/SFML/Graphics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simlulation -BC:/Users/maxta/VSCodeProjects/Simlulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/src/SFML/Graphics/CMakeFiles/generate.stamp
+C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simulation -BC:/Users/maxta/VSCodeProjects/Simulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/src/SFML/Graphics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -315,13 +315,13 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\cmake\Modules\FindFreetype.cmake;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\src\SFML\Graphics\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\cmake\Modules\FindFreetype.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\src\SFML\Graphics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\BlendMode.cpp">
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\BlendMode.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -343,8 +343,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\BlendMode.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\Color.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\BlendMode.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\Color.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -366,9 +366,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Color.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Export.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\Font.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Color.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Export.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\Font.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -390,8 +390,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Font.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\Glsl.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Font.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\Glsl.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -413,10 +413,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Glsl.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Glsl.inl" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Glyph.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\GLCheck.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Glsl.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Glsl.inl" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Glyph.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\GLCheck.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -438,9 +438,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\GLCheck.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\GLExtensions.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\GLExtensions.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\GLCheck.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\GLExtensions.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\GLExtensions.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -462,7 +462,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\Image.cpp">
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\Image.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -484,8 +484,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Image.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\ImageLoader.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Image.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\ImageLoader.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -507,11 +507,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\ImageLoader.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\PrimitiveType.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Rect.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Rect.inl" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\RenderStates.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\ImageLoader.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\PrimitiveType.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Rect.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Rect.inl" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\RenderStates.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -533,8 +533,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\RenderStates.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTexture.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\RenderStates.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTexture.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -556,8 +556,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\RenderTexture.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTarget.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\RenderTexture.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTarget.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -579,8 +579,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\RenderTarget.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\RenderWindow.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\RenderTarget.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\RenderWindow.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -602,8 +602,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\RenderWindow.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\Shader.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\RenderWindow.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\Shader.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -625,8 +625,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Shader.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\Texture.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Shader.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\Texture.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -648,8 +648,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Texture.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\TextureSaver.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Texture.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\TextureSaver.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -671,8 +671,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\TextureSaver.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\Transform.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\TextureSaver.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\Transform.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -694,8 +694,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Transform.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\Transformable.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Transform.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\Transformable.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -717,8 +717,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Transformable.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\View.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Transformable.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\View.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -740,8 +740,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\View.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\Vertex.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\View.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\Vertex.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -763,9 +763,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Vertex.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Drawable.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\Shape.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Vertex.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Drawable.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\Shape.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -787,8 +787,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Shape.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\CircleShape.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Shape.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\CircleShape.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -810,8 +810,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\CircleShape.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\RectangleShape.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\CircleShape.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\RectangleShape.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -833,8 +833,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\RectangleShape.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\ConvexShape.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\RectangleShape.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\ConvexShape.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -856,8 +856,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\ConvexShape.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\Sprite.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\ConvexShape.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\Sprite.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -879,8 +879,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Sprite.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\Text.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Sprite.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\Text.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -902,8 +902,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\Text.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\VertexArray.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\Text.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\VertexArray.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -925,8 +925,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\VertexArray.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\VertexBuffer.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\VertexArray.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\VertexBuffer.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -948,8 +948,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Graphics\VertexBuffer.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImpl.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Graphics\VertexBuffer.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImpl.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -971,8 +971,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImpl.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImplFBO.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImpl.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImplFBO.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -994,8 +994,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImplFBO.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImplDefault.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImplFBO.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImplDefault.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -1017,22 +1017,22 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImplDefault.hpp" />
-    <ResourceCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\src\SFML\Graphics\sfml-graphics.rc" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Graphics\RenderTextureImplDefault.hpp" />
+    <ResourceCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\src\SFML\Graphics\sfml-graphics.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\ZERO_CHECK.vcxproj">
-      <Project>{AF606984-72BF-39B2-86C9-C5CEA8862EB0}</Project>
+    <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simulation\build\ZERO_CHECK.vcxproj">
+      <Project>{2E309769-D98A-3CE9-A7D1-8F8A5FB31B2B}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\src\SFML\System\sfml-system.vcxproj">
-      <Project>{416C2FC3-8AB8-379D-99CA-1C2D42AD955E}</Project>
+    <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\src\SFML\System\sfml-system.vcxproj">
+      <Project>{FC03A6F2-F8F5-3E9B-9235-03411B3F5CF4}</Project>
       <Name>sfml-system</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\src\SFML\Window\sfml-window.vcxproj">
-      <Project>{60AB7DB0-D851-3B55-9109-4A64FAEF4E8D}</Project>
+    <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{AB09ADE3-2254-3FC3-BBE6-B9380C207172}</Project>
       <Name>sfml-window</Name>
     </ProjectReference>
   </ItemGroup>

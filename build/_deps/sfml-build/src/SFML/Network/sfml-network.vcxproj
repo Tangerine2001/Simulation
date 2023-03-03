@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7668DDD1-A319-3876-8605-C04A701135E0}</ProjectGuid>
+    <ProjectGuid>{5C38B92E-C9EE-330D-8692-FD34124AE038}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\lib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\lib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sfml-network.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sfml-network-d-2</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\lib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\lib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sfml-network.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sfml-network-2</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\lib\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\lib\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sfml-network.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sfml-network-2</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\lib\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\lib\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sfml-network.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sfml-network-2</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -103,10 +103,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\";SFML_NETWORK_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -119,8 +119,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/Debug/sfml-network-d.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/Debug/sfml-network.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/Debug/sfml-network-d.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/Debug/sfml-network.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -129,7 +129,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -146,10 +146,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\";SFML_NETWORK_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -162,8 +162,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/Release/sfml-network.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/Release/sfml-network.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/Release/sfml-network.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/Release/sfml-network.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -172,7 +172,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -189,10 +189,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\";SFML_NETWORK_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -205,8 +205,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/MinSizeRel/sfml-network.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/MinSizeRel/sfml-network.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/MinSizeRel/sfml-network.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/MinSizeRel/sfml-network.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -215,7 +215,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -231,10 +231,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\";SFML_NETWORK_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include;C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -247,8 +247,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/RelWithDebInfo/sfml-network.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/RelWithDebInfo/sfml-network.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/RelWithDebInfo/sfml-network.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/RelWithDebInfo/sfml-network.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -256,11 +256,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Network\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Network\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simlulation -BC:/Users/maxta/VSCodeProjects/Simlulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp
+C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simulation -BC:/Users/maxta/VSCodeProjects/Simulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -268,12 +268,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simlulation -BC:/Users/maxta/VSCodeProjects/Simlulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp
+C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simulation -BC:/Users/maxta/VSCodeProjects/Simulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -281,12 +281,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simlulation -BC:/Users/maxta/VSCodeProjects/Simlulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp
+C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simulation -BC:/Users/maxta/VSCodeProjects/Simulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -294,12 +294,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/src/SFML/Network/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simlulation -BC:/Users/maxta/VSCodeProjects/Simlulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp
+C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -SC:/Users/maxta/VSCodeProjects/Simulation -BC:/Users/maxta/VSCodeProjects/Simulation/build --check-stamp-file C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/src/SFML/Network/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -307,14 +307,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\src\SFML\Network\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Network\Export.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Network\Ftp.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Network\Export.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Network\Ftp.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -336,8 +336,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Network\Ftp.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Network\Http.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Network\Ftp.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Network\Http.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -359,8 +359,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Network\Http.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Network\IpAddress.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Network\Http.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Network\IpAddress.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -382,8 +382,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Network\IpAddress.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Network\Packet.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Network\IpAddress.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Network\Packet.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -405,8 +405,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Network\Packet.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Network\Socket.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Network\Packet.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Network\Socket.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -428,10 +428,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Network\Socket.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Network\SocketImpl.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Network\SocketHandle.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Network\SocketSelector.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Network\Socket.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Network\SocketImpl.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Network\SocketHandle.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Network\SocketSelector.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -453,8 +453,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Network\SocketSelector.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Network\TcpListener.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Network\SocketSelector.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Network\TcpListener.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -476,8 +476,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Network\TcpListener.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Network\TcpSocket.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Network\TcpListener.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Network\TcpSocket.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -499,8 +499,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Network\TcpSocket.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Network\UdpSocket.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Network\TcpSocket.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Network\UdpSocket.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -522,8 +522,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\include\SFML\Network\UdpSocket.hpp" />
-    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Network\Win32\SocketImpl.cpp">
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\include\SFML\Network\UdpSocket.hpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Network\Win32\SocketImpl.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -545,18 +545,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</TreatWarningAsError>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-src\src\SFML\Network\Win32\SocketImpl.hpp" />
-    <ResourceCompile Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\src\SFML\Network\sfml-network.rc" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-src\src\SFML\Network\Win32\SocketImpl.hpp" />
+    <ResourceCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\src\SFML\Network\sfml-network.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\ZERO_CHECK.vcxproj">
-      <Project>{AF606984-72BF-39B2-86C9-C5CEA8862EB0}</Project>
+    <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simulation\build\ZERO_CHECK.vcxproj">
+      <Project>{2E309769-D98A-3CE9-A7D1-8F8A5FB31B2B}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simlulation\build\_deps\sfml-build\src\SFML\System\sfml-system.vcxproj">
-      <Project>{416C2FC3-8AB8-379D-99CA-1C2D42AD955E}</Project>
+    <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simulation\build\_deps\sfml-build\src\SFML\System\sfml-system.vcxproj">
+      <Project>{FC03A6F2-F8F5-3E9B-9235-03411B3F5CF4}</Project>
       <Name>sfml-system</Name>
     </ProjectReference>
   </ItemGroup>

@@ -12,10 +12,13 @@ class GameObject
         Vector2 position;    
         sf::Sprite sprite;
         
+        // Constructors and init
         void Init(Vector2 position);
-
         GameObject();
         GameObject(Vector2 position);
+
+        // Methods
+        void Update();
     protected:
     private:
 };

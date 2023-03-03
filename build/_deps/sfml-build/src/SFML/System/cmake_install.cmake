@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-src/src/SFML/System
+# Install script for directory: C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-src/src/SFML/System
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,25 +34,25 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "devel" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/Debug/sfml-system-d.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/Debug/sfml-system-d.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/Release/sfml-system.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/Release/sfml-system.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/MinSizeRel/sfml-system.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/MinSizeRel/sfml-system.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/RelWithDebInfo/sfml-system.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/RelWithDebInfo/sfml-system.lib")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "bin" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/Debug/sfml-system-d-2.dll")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/Debug/sfml-system-d-2.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/Release/sfml-system-2.dll")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/Release/sfml-system-2.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/MinSizeRel/sfml-system-2.dll")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/MinSizeRel/sfml-system-2.dll")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Users/maxta/VSCodeProjects/Simlulation/build/_deps/sfml-build/lib/RelWithDebInfo/sfml-system-2.dll")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Users/maxta/VSCodeProjects/Simulation/build/_deps/sfml-build/lib/RelWithDebInfo/sfml-system-2.dll")
   endif()
 endif()
 
