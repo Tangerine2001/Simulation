@@ -36,5 +36,6 @@
 
 # To remove build from git but keep it locally
 # git rm -r --cached build 
+build
 
 libs
