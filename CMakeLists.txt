@@ -52,6 +52,11 @@ endif()
 
 install(TARGETS ${PROJECT_NAME})
 
+# Move the assets folder to the build directory
+add_custom_target(copy_assets
+    COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_LIST_DIR}/assets ${CMAKE_CURRENT_BINARY_DIR}/assets
+)
+add_dependencies(${PROJECT_NAME} copy_assets)
 
 # target_include_directories(${PROJECT_NAME} PRIVATE ${HEADER_FILES})
 target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDE_DIR})
