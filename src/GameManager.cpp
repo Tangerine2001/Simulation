@@ -60,19 +60,19 @@ void GameManager::HandleOutOfBounds(GameObject &gameObject)
 {
     if (gameObject.position.x <= 0.0f - this->boundaryMargin)
     {
-        gameObject.position.x = this->windowWidth + this->boundaryMargin;
+        gameObject.position.x = this->windowWidth;
     }
-    else if (gameObject.position.x >= (float)(this->windowWidth))
+    else if (gameObject.position.x >= (float)(this->windowWidth + this->boundaryMargin))
     {
-        gameObject.position.x = 0.0f - this->boundaryMargin;
+        gameObject.position.x = 0.0f;
     }
 
     if (gameObject.position.y <= 0.0f - this->boundaryMargin)
     {
-        gameObject.position.y = this->windowHeight + this->boundaryMargin;
+        gameObject.position.y = this->windowHeight;
     }
-    else if (gameObject.position.y >= (float)(this->windowHeight))
+    else if (gameObject.position.y >= (float)(this->windowHeight + this->boundaryMargin))
     {
-        gameObject.position.y = 0.0f - this->boundaryMargin;
+        gameObject.position.y = 0.0f;
     }
 }

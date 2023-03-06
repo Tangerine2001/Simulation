@@ -12,6 +12,21 @@ int main()
     sf::RenderWindow window(sf::VideoMode(width, height), "My window");
     window.setFramerateLimit(60);
 
+    sf::Font font;
+    font.loadFromFile("../assets/arial.ttf");
+
+    sf::Text fpsCounter;
+    fpsCounter.setFont(font);
+    fpsCounter.setCharacterSize(24);
+    fpsCounter.setFillColor(sf::Color::White);
+    fpsCounter.setPosition(((float) width / 2.0f) - 90, 10);
+
+    sf::Clock clock;
+    float lastTime = 0.0f;
+    float currentTime = 0.0f;
+    float fpsUpdateInterval = 1.0f;
+    int frames = 0;
+
     GameManager gameManager(10, 1, width, height);
     gameManager.Start();
 
@@ -31,6 +46,16 @@ int main()
         {
             window.draw(gameObject.sprite);
         }
+
+        frames++;
+        currentTime = clock.getElapsedTime().asSeconds();
+        if ((currentTime - lastTime) > fpsUpdateInterval)
+        {
+            fpsCounter.setString("FPS: " + std::to_string((int) (frames/(currentTime - lastTime))));
+            lastTime = currentTime;
+            frames = 0;
+        }
+        window.draw(fpsCounter);
 
         window.display();
     }
