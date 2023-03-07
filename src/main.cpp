@@ -10,21 +10,21 @@ int main()
     int height = 600;
 
     sf::RenderWindow window(sf::VideoMode(width, height), "My window");
-    window.setFramerateLimit(60);
+    window.setFramerateLimit(120);
 
     sf::Font font;
     font.loadFromFile("../assets/arial.ttf");
 
     sf::Text fpsCounter;
     fpsCounter.setFont(font);
-    fpsCounter.setCharacterSize(24);
+    fpsCounter.setCharacterSize(16);
     fpsCounter.setFillColor(sf::Color::White);
-    fpsCounter.setPosition(((float) width / 2.0f) - 90, 10);
+    fpsCounter.setPosition(((float) width / 2.0f) - 70, 10);
 
     sf::Clock clock;
     float lastTime = 0.0f;
     float currentTime = 0.0f;
-    float fpsUpdateInterval = 1.0f;
+    float fpsUpdateInterval = 0.6f;
     int frames = 0;
 
     GameManager gameManager(10, 1, width, height);

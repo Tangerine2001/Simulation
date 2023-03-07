@@ -28,6 +28,7 @@ class GameManager
         float boundaryMargin = 1.0f;
 
         void HandleOutOfBounds(GameObject &gameObject);
+        void HandlePreyCollision(Prey &prey);
 };
 
 #endif

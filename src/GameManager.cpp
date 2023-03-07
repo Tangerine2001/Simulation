@@ -49,6 +49,7 @@ std::vector<GameObject> GameManager::Update()
     {
         prey.Update();
         HandleOutOfBounds(prey);
+        HandlePreyCollision(prey);
         prey.sprite.setPosition(prey.position.x, prey.position.y);
         gameObjects.push_back(prey);
     }
@@ -76,3 +77,22 @@ void GameManager::HandleOutOfBounds(GameObject &gameObject)
         gameObject.position.y = 0.0f;
     }
 }
+
+void GameManager::HandlePreyCollision(Prey &prey)
+{
+    for (Prey &otherPrey : GameManager::preys)
+    {
+        if (otherPrey.id != prey.id)
+        {
+            if (prey.position.x >= otherPrey.position.x - prey.sprite.getGlobalBounds().width && prey.position.x <= otherPrey.position.x + otherPrey.sprite.getGlobalBounds().width)
+            {
+                if (prey.position.y >= otherPrey.position.y - prey.sprite.getGlobalBounds().height && prey.position.y <= otherPrey.position.y + otherPrey.sprite.getGlobalBounds().height)
+                {
+                    prey.x *= -1.0f;
+                    prey.y *= -1.0f;
+                }
+            }
+        }
+    }
+}
+
