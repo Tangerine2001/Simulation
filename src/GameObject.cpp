@@ -1,5 +1,6 @@
 #include <GameObject.hpp>
 #include <stdlib.h>
+#include <iostream>
 
 GameObject::GameObject()
 {
@@ -18,9 +19,17 @@ void GameObject::Init(Vector2 position)
 {
     this->position = position;
     this->sprite.setPosition(position.x, position.y);
+    this->angle = 0;
 }
 
 void GameObject::Update()
 {
     // Do nothing
+}
+
+void GameObject::Rotate(float angle)
+{
+    // Rotate the sprite by 1 degree
+    this->angle += angle;
+    this->velocity.Rotate(angle);
 }

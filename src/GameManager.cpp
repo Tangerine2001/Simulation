@@ -5,7 +5,7 @@
 #include <Prey.hpp>
 #include <Random.hpp>
 
-// #include <Boid/Boid.hpp>
+#include <Boid.hpp>
 
 void GameManager::Init(int numPreys, int numPredators, int windowWidth, int windowHeight)
 {
@@ -46,8 +46,8 @@ void GameManager::Start()
             GameManager::preys.push_back(prey);
         }
     } else {
-        // this->boidGame = BoidGame(this->windowWidth, this->windowHeight, &this->textures[2]);
-        // this->boidGame.Start();
+        this->boidGame = BoidGame(this->windowWidth, this->windowHeight, &this->textures[2]);
+        this->boidGame.Start();
     }
 }
 
@@ -68,7 +68,7 @@ std::vector<GameObject> GameManager::Update()
             gameObjects.push_back(prey);
         }
     } else {
-        // gameObjects = this->boidGame.Update();
+        gameObjects = this->boidGame.Update();
     }
     return gameObjects;
 }

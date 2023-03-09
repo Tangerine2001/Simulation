@@ -1,10 +1,13 @@
 #ifndef BOID_HPP
 #define BOID_HPP
 
-class Boid
+#include <GameObject.hpp>
+
+class Boid : public GameObject
 {
     public:
         Boid();
+
         void Update();
     protected:
     private:

@@ -5,10 +5,12 @@
 Boid::Boid()
 {
     // Print "Boid created"
-    std::cout << "Boid created" << std::endl;
+    // std::cout << "Boid created" << std::endl;
 }
 
 void Boid::Update()
 {
+
     // Update boid
+    this->position += this->velocity;
 }

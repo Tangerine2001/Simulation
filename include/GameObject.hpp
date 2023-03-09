@@ -12,6 +12,7 @@ class GameObject
         Vector2 position;
         Vector2 velocity;    
         sf::Sprite sprite;
+        float angle;
         
         // Constructors and init
         void Init(Vector2 position);
@@ -20,6 +21,7 @@ class GameObject
 
         // Methods
         void Update();
+        void Rotate(float angle);
     protected:
     private:
 };
