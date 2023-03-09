@@ -65,6 +65,8 @@ std::vector<GameObject> GameManager::Update()
             prey.sprite.setPosition(prey.position.x, prey.position.y);
             gameObjects.push_back(prey);
         }
+    } else {
+        gameObjects = boidGame.Update();
     }
     return gameObjects;
 }

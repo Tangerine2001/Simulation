@@ -9,7 +9,8 @@ class GameObject
 {
     public:
         std::string type;
-        Vector2 position;    
+        Vector2 position;
+        Vector2 velocity;    
         sf::Sprite sprite;
         
         // Constructors and init
