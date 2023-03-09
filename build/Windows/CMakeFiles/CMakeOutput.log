@@ -7,7 +7,7 @@ Id flags:
 The output was:
 0
 MSBuild version 17.4.1+9a89d02ff for .NET Framework
-Build started 3/3/2023 1:48:19 PM.
+Build started 3/9/2023 2:00:09 PM.
 Project "C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -33,7 +33,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.04
+Time Elapsed 00:00:01.09
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -43,14 +43,14 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 The CXX compiler identification is MSVC, found in "C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/3.25.2/CompilerIdCXX/CompilerIdCXX.exe"
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/CMakeScratch/TryCompile-936v8w
+Change Dir: C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/CMakeScratch/TryCompile-hiv49k
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_9d940.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_3a99e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
   Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31942 for x64
   CMakeCXXCompilerABI.cpp
   Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9d940.dir\Debug\\" /Fd"cmTC_9d940.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp"
-  cmTC_9d940.vcxproj -> C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-936v8w\Debug\cmTC_9d940.exe
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_3a99e.dir\Debug\\" /Fd"cmTC_3a99e.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_3a99e.vcxproj -> C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-hiv49k\Debug\cmTC_3a99e.exe
 
 
 
@@ -62,7 +62,7 @@ Id flags:
 The output was:
 0
 MSBuild version 17.4.1+9a89d02ff for .NET Framework
-Build started 3/3/2023 1:48:34 PM.
+Build started 3/9/2023 2:00:32 PM.
 Project "C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -88,7 +88,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.81
+Time Elapsed 00:00:01.06
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -98,62 +98,62 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 The C compiler identification is MSVC, found in "C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/3.25.2/CompilerIdC/CompilerIdC.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/CMakeScratch/TryCompile-rd7tvq
+Change Dir: C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/CMakeScratch/TryCompile-xho2f5
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_36b30.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ccaf0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
   Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31942 for x64
   CMakeCCompilerABI.c
   Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_36b30.dir\Debug\\" /Fd"cmTC_36b30.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCCompilerABI.c"
-  cmTC_36b30.vcxproj -> C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-rd7tvq\Debug\cmTC_36b30.exe
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ccaf0.dir\Debug\\" /Fd"cmTC_ccaf0.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCCompilerABI.c"
+  cmTC_ccaf0.vcxproj -> C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-xho2f5\Debug\cmTC_ccaf0.exe
 
 
 
 Determining if the include file sys/types.h exists passed with the following output:
-Change Dir: C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/CMakeScratch/TryCompile-5snqms
+Change Dir: C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/CMakeScratch/TryCompile-dosjv9
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_55032.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_ead9b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
   Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31942 for x64
   CheckIncludeFile.c
   Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_55032.dir\Debug\\" /Fd"cmTC_55032.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-5snqms\CheckIncludeFile.c"
-  cmTC_55032.vcxproj -> C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-5snqms\Debug\cmTC_55032.exe
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ead9b.dir\Debug\\" /Fd"cmTC_ead9b.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-dosjv9\CheckIncludeFile.c"
+  cmTC_ead9b.vcxproj -> C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-dosjv9\Debug\cmTC_ead9b.exe
 
 
 
 Determining if the include file stdint.h exists passed with the following output:
-Change Dir: C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/CMakeScratch/TryCompile-sux4ui
+Change Dir: C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/CMakeScratch/TryCompile-jbnsc6
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_36551.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_65451.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
   Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31942 for x64
   CheckIncludeFile.c
   Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_36551.dir\Debug\\" /Fd"cmTC_36551.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-sux4ui\CheckIncludeFile.c"
-  cmTC_36551.vcxproj -> C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-sux4ui\Debug\cmTC_36551.exe
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_65451.dir\Debug\\" /Fd"cmTC_65451.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-jbnsc6\CheckIncludeFile.c"
+  cmTC_65451.vcxproj -> C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-jbnsc6\Debug\cmTC_65451.exe
 
 
 
 Determining if the include file stddef.h exists passed with the following output:
-Change Dir: C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/CMakeScratch/TryCompile-8rwr1j
+Change Dir: C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/CMakeScratch/TryCompile-d6qdw6
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_0cf87.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_08d76.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
   Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31942 for x64
   CheckIncludeFile.c
   Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0cf87.dir\Debug\\" /Fd"cmTC_0cf87.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-8rwr1j\CheckIncludeFile.c"
-  cmTC_0cf87.vcxproj -> C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-8rwr1j\Debug\cmTC_0cf87.exe
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_08d76.dir\Debug\\" /Fd"cmTC_08d76.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-d6qdw6\CheckIncludeFile.c"
+  cmTC_08d76.vcxproj -> C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-d6qdw6\Debug\cmTC_08d76.exe
 
 
 
 Determining size of void* passed with the following output:
-Change Dir: C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/CMakeScratch/TryCompile-il4pr2
+Change Dir: C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/CMakeFiles/CMakeScratch/TryCompile-svjbbh
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f2b0b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_295ae.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.4.1+9a89d02ff for .NET Framework
   Microsoft (R) C/C++ Optimizing Compiler Version 19.34.31942 for x64
   SIZEOF_VOID_PTR.c
   Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f2b0b.dir\Debug\\" /Fd"cmTC_f2b0b.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-il4pr2\SIZEOF_VOID_PTR.c"
-  cmTC_f2b0b.vcxproj -> C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-il4pr2\Debug\cmTC_f2b0b.exe
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_295ae.dir\Debug\\" /Fd"cmTC_295ae.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-svjbbh\SIZEOF_VOID_PTR.c"
+  cmTC_295ae.vcxproj -> C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\CMakeScratch\TryCompile-svjbbh\Debug\cmTC_295ae.exe
 
 
 

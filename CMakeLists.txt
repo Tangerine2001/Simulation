@@ -2,15 +2,16 @@ cmake_minimum_required(VERSION 3.10)
 
 set(PROJECT_NAME "Simulation")
 set(SOURCE_DIR src)
+set(LIBS_DIR libs)
 set(INCLUDE_DIR include)
 
 set(SOURCES ${SOURCE_DIR}/main.cpp)
 file(GLOB SOURCES ${SOURCE_DIR}/*.cpp)
-file(GLOB SOURCES ${SOURCE_DIR}/Boid/*.cpp)
+# file(GLOB SOURCES ${SOURCE_DIR}/Boid/*.cpp)
 
 set(HEADERS ${INCLUDE_DIR}/GameObject.hpp)
 file(GLOB HEADERS ${INCLUDE_DIR}/*.hpp)
-file(GLOB HEADERS ${INCLUDE_DIR}/Boid/*.hpp)
+# file(GLOB HEADERS ${INCLUDE_DIR}/Boid/*.hpp)
 
 project(${PROJECT_NAME} LANGUAGES CXX)
 
@@ -62,6 +63,6 @@ add_dependencies(${PROJECT_NAME} copy_assets)
 
 # target_include_directories(${PROJECT_NAME} PRIVATE ${HEADER_FILES})
 target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDE_DIR})
-target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDE_DIR}/Boid)
+# target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDE_DIR}/Boid)
 # target_include_directories(${SOURCES} PUBLIC build/_deps/sfml-src/include)
 # target_link_libraries(${PROJECT_NAME} PRIVATE Vector2Lib)

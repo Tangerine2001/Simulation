@@ -2,7 +2,7 @@
 #define GAMEMANAGER_HPP
 
 #include <Prey.hpp>
-#include <Boid/BoidGame.hpp>
+// #include <Boid/BoidGame.hpp>
 // #include <Predator.hpp>
 
 class GameManager
@@ -27,6 +27,8 @@ class GameManager
     protected:
     private:
         float boundaryMargin = 1.0f;
+
+        // BoidGame boidGame;
 
         void HandleOutOfBounds(GameObject &gameObject);
         void HandlePreyCollision(Prey &prey);
