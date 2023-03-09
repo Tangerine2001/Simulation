@@ -7,7 +7,6 @@
 
 void Prey::Init(int id, float speed)
 {
-    this->id = id;
     this->speed = speed;
     this->type = "prey";
 

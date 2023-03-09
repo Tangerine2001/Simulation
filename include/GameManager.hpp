@@ -2,6 +2,7 @@
 #define GAMEMANAGER_HPP
 
 #include <Prey.hpp>
+#include <Boid/BoidGame.hpp>
 // #include <Predator.hpp>
 
 class GameManager

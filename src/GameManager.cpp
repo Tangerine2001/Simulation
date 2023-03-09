@@ -16,10 +16,13 @@ void GameManager::Init(int numPreys, int numPredators, int windowWidth, int wind
     preyTexture.loadFromFile("../assets/prey0.png");
     sf::Texture predatorTexture;
     predatorTexture.loadFromFile("../assets/prey0.png");
+    sf::Texture boidTexture;
+    boidTexture.loadFromFile("../assets/boid.png");
 
     this->textures = std::vector<sf::Texture>();
     this->textures.push_back(preyTexture);
     this->textures.push_back(predatorTexture);
+    this->textures.push_back(boidTexture);
 }
 
 GameManager::GameManager() { Init(10, 1, 800, 600); }
@@ -30,30 +33,39 @@ void GameManager::Start()
     // Don't spawn entities with borderMargin pixels of the boundary
     float borderMargin = 50.0f;
 
-    // Create numPreys preys as GameObjects
-    for (int i = 0; i < this->numPreys; i++)
-    {
-        Prey prey(i, Random::Range(0.5f, 1.0f));
-        prey.position = Vector2(Random::Range(borderMargin, (float)(this->windowWidth) - borderMargin), Random::Range(borderMargin, (float)(this->windowHeight - borderMargin)));
-        prey.sprite.setTexture(this->textures[0]);
-        GameManager::preys.push_back(prey);
+    bool boidSim = true;
+    if (!boidSim) {
+        // Create numPreys preys as GameObjects
+        for (int i = 0; i < this->numPreys; i++)
+        {
+            Prey prey(i, Random::Range(0.5f, 1.0f));
+            prey.position = Vector2(Random::Range(borderMargin, (float)(this->windowWidth) - borderMargin), Random::Range(borderMargin, (float)(this->windowHeight - borderMargin)));
+            prey.sprite.setTexture(this->textures[0]);
+            GameManager::preys.push_back(prey);
+        }
+    } else {
+        BoidGame boidGame(this->windowWidth, this->windowHeight, &this->textures[2]);
+        boidGame.Start();
     }
-
 }
 
 std::vector<GameObject> GameManager::Update()
 {
     std::vector<GameObject> gameObjects;
-    // Update preys and predators
-    for (Prey &prey : GameManager::preys)
-    {
-        prey.Update();
-        HandleOutOfBounds(prey);
-        HandlePreyCollision(prey);
-        prey.sprite.setPosition(prey.position.x, prey.position.y);
-        gameObjects.push_back(prey);
-    }
 
+    bool boidSim = true;
+    if (!boidSim) 
+    {
+        // Update preys and predators
+        for (Prey &prey : GameManager::preys)
+        {
+            prey.Update();
+            HandleOutOfBounds(prey);
+            HandlePreyCollision(prey);
+            prey.sprite.setPosition(prey.position.x, prey.position.y);
+            gameObjects.push_back(prey);
+        }
+    }
     return gameObjects;
 }
 
@@ -82,7 +94,7 @@ void GameManager::HandlePreyCollision(Prey &prey)
 {
     for (Prey &otherPrey : GameManager::preys)
     {
-        if (otherPrey.id != prey.id)
+        if (&otherPrey != &prey)
         {
             if (prey.position.x >= otherPrey.position.x - prey.sprite.getGlobalBounds().width && prey.position.x <= otherPrey.position.x + otherPrey.sprite.getGlobalBounds().width)
             {

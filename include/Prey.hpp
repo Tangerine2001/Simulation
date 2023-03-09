@@ -6,8 +6,6 @@
 class Prey : public GameObject
 {
     public:
-        sf::Texture texture;
-        int id;
         float speed;
         float x;
         float y;
