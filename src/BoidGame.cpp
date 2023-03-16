@@ -25,7 +25,7 @@ void BoidGame::Start(sf::RenderWindow &window)
     float scale = 0.02f;
 
     // Create numBoids boids
-    int numBoids = 1;
+    int numBoids = 50;
     for (int i = 0; i < numBoids; i++)
     {
         Boid boid;
@@ -46,6 +46,7 @@ std::vector<GameObject> BoidGame::Update()
     {
         TurnFromBorder(boid);
         HandleOutOfBounds(boid);
+        Align(boid);
         boid.Update();
         gameObjects.push_back(boid);
     }
@@ -80,6 +81,38 @@ void BoidGame::HandleOutOfBounds(Boid &boid)
     if (boid.position.x < 0) { boid.position.x = windowWidth; }
     if (boid.position.y > windowHeight) { boid.position.y = 0; }
     if (boid.position.y < 0) { boid.position.y = windowHeight; }
+}
+
+void BoidGame::Align(Boid &boid)
+{
+    // Get the average velocity of all boids within the alignment radius.
+    Vector2 averageVelocity(0, 0);
+    int numBoids = 0;
+    for (Boid &otherBoid : this->boids)
+    {
+        if (&otherBoid != &boid)
+        {
+            float distance = Vector2::Distance(boid.position, otherBoid.position);
+            if (distance < alignRadius)
+            {
+                averageVelocity += otherBoid.velocity;
+                numBoids++;
+            }
+        }
+    }
+
+    // If there are no boids within the alignment radius, return.
+    if (numBoids == 0) { return; }
+
+    // Get the average velocity and normalize it to max speed.
+    averageVelocity /= numBoids;
+    averageVelocity = averageVelocity.Normalized() * this->maxBoidSpeed;
+
+    // Calculate the steering force
+    Vector2 steeringForce = averageVelocity - boid.velocity;
+
+    // Add the steering force to the boid's acceleration
+    boid.acceleration += steeringForce;
 }
 
 /////////////////////////

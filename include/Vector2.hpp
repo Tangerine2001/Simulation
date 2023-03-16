@@ -17,11 +17,14 @@ class Vector2
         Vector2 operator-=(Vector2 other);
         Vector2 operator*(float other);
         Vector2 operator*=(float other);
+        Vector2 operator/(float other);
+        Vector2 operator/=(float other);
 
         float x;
         float y;
 
         static float AngleBetween(Vector2 vec1, Vector2 vec2);
+        static float Distance(Vector2 vec1, Vector2 vec2);
 };
 
 #endif

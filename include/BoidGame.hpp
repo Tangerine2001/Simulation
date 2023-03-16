@@ -18,6 +18,8 @@ class BoidGame
     private:
         int windowWidth;
         int windowHeight;
+        float maxBoidSpeed = 5.0f;
+        float alignRadius = 100.0f;
         sf::Texture *texture;
         sf::RenderWindow *window;
 
@@ -25,6 +27,7 @@ class BoidGame
 
         void HandleOutOfBounds(Boid &boid);
         void TurnFromBorder(Boid &boid);
+        void Align(Boid &boid);
         void DrawLine(Vector2 start, Vector2 end, sf::Color color = sf::Color::White);
 };
 

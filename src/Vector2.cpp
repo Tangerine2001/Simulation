@@ -14,7 +14,7 @@ Vector2::Vector2(float x, float y)
 
 float Vector2::Length()
 {
-    return sqrt(this->x * this->x + this->y * this->y);
+    return (float) sqrt(this->x * this->x + this->y * this->y);
 }
 
 void Vector2::Rotate(float angle)
@@ -67,6 +67,18 @@ Vector2 Vector2::operator*=(float other)
     return *this;
 }
 
+Vector2 Vector2::operator/(float other)
+{
+    return Vector2(this->x / other, this->y / other);
+}
+
+Vector2 Vector2::operator/=(float other)
+{
+    this->x /= other;
+    this->y /= other;
+    return *this;
+}
+
 //////////////////////
 // Static functions //
 //////////////////////
@@ -76,4 +88,9 @@ float Vector2::AngleBetween(Vector2 vec1, Vector2 vec2)
     float dot = vec1.x * vec2.x + vec1.y * vec2.y;
     float det = vec1.x * vec2.y - vec1.y * vec2.x;
     return atan2(det, dot);
+}
+
+float Vector2::Distance(Vector2 vec1, Vector2 vec2)
+{
+    return sqrt(pow(vec2.x - vec1.x, 2) + pow(vec2.y - vec1.y, 2));
 }
