@@ -10,7 +10,8 @@ class GameObject
     public:
         std::string type;
         Vector2 position;
-        Vector2 velocity;    
+        Vector2 velocity;
+        Vector2 acceleration; 
         sf::Sprite sprite;
         float angle;
         
@@ -21,7 +22,6 @@ class GameObject
 
         // Methods
         void Update();
-        void Rotate(float angle);
     protected:
     private:
 };

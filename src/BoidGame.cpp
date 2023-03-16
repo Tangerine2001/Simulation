@@ -38,10 +38,8 @@ std::vector<GameObject> BoidGame::Update()
     // Update boids
     for (Boid &boid : boids)
     {
-        boid.Update();
         HandleOutOfBounds(boid);
-        boid.sprite.setPosition(boid.position.x, boid.position.y);
-        boid.sprite.setRotation(boid.angle);
+        boid.Update();
         gameObjects.push_back(boid);
     }
 
@@ -50,18 +48,37 @@ std::vector<GameObject> BoidGame::Update()
 
 void BoidGame::HandleOutOfBounds(Boid &boid)
 {
-    // Make a forward facing raycast to check if the boid will be out of bounds. Length of raycast should be 20 pixels.
-    Vector2 raycast = boid.velocity.Normalized() * 20.0f;
+    // Make a forward facing raycast to check if the boid will be out of bounds. Length of raycast should be 100 pixels.
+    Vector2 raycast = boid.velocity.Normalized() * 100.0f;
     Vector2 raycastEnd = boid.position + raycast;
 
-    // Check raycast crosses top border
-    if (raycastEnd.y < 0)
+    Vector2 boundsAdjustment(0, 0);
+    if (raycastEnd.y < 0) // Check raycast crosses top border
     {
         // If the raycast will be out of bounds, rotate the boid depending on the angle relative to the boundary.
-        float angle = Vector2::AngleBetween(boid.velocity, Vector2(0, 1));
-
-        angle *= 0.1f;
-        boid.Rotate(angle);
+        // angle -= Vector2::AngleBetween(boid.velocity, Vector2(1, 0));
+        boundsAdjustment += Vector2(0, -1);
     }
-    
+    if (raycastEnd.x > windowWidth) // Check raycast crosses right border
+    {
+        // If the raycast will be out of bounds, rotate the boid depending on the angle relative to the boundary.
+        // angle += 180 - (Vector2::AngleBetween(boid.velocity, Vector2(0, -1)));
+         boundsAdjustment += Vector2(1, 0);
+    }
+    if (raycastEnd.y > windowHeight) // Check raycast crosses bottom border
+    {
+        // If the raycast will be out of bounds,Tang rotate the boid depending on the angle relative to the boundary.
+        // angle += Vector2::AngleBetween(boid.velocity, Vector2(-1, 0));
+        boundsAdjustment += Vector2(0, 1);
+    }
+    if (raycastEnd.x < 0)  // Check raycast crosses left border
+    {
+        // If the raycast will be out of bounds, rotate the boid depending on the angle relative to the boundary.
+        // angle += Vector2::AngleBetween(boid.velocity, Vector2(0, 1));
+        boundsAdjustment += Vector2(-1, 0);
+    }
+
+    // angle *= 0.01f;
+    // boid.Rotate(angle);
+    boid.acceleration -= boundsAdjustment;
 }

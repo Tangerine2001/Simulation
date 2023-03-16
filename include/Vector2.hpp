@@ -13,7 +13,10 @@ class Vector2
 
         Vector2 operator+(Vector2 other);
         Vector2 operator+=(Vector2 other);
+        Vector2 operator-(Vector2 other);
+        Vector2 operator-=(Vector2 other);
         Vector2 operator*(float other);
+        Vector2 operator*=(float other);
 
         float x;
         float y;

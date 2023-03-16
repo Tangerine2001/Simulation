@@ -10,7 +10,7 @@ int main()
     int height = 600;
 
     sf::RenderWindow window(sf::VideoMode(width, height), "My window");
-    window.setFramerateLimit(120);
+    window.setFramerateLimit(60);
 
     sf::Font font;
     font.loadFromFile("../assets/arial.ttf");

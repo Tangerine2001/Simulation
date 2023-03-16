@@ -26,10 +26,3 @@ void GameObject::Update()
 {
     // Do nothing
 }
-
-void GameObject::Rotate(float angle)
-{
-    // Rotate the sprite by 1 degree
-    this->angle += angle;
-    this->velocity.Rotate(angle);
-}
