@@ -12,13 +12,14 @@ class BoidGame
         BoidGame();
         BoidGame(int windowWidth, int windowHeight, sf::Texture *texture);
 
-        void Start();
+        void Start(sf::RenderWindow &window);
         std::vector<GameObject> Update();
     protected:
     private:
         int windowWidth;
         int windowHeight;
         sf::Texture *texture;
+        sf::RenderWindow *window;
 
         std::vector<Boid> boids;
 

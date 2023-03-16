@@ -28,7 +28,7 @@ int main()
     int frames = 0;
 
     GameManager gameManager(10, 1, width, height);
-    gameManager.Start();
+    gameManager.Start(window);
 
     while (window.isOpen())
     {

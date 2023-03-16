@@ -3,6 +3,7 @@
 
 #include <Prey.hpp>
 #include <BoidGame.hpp>
+#include <SFML/Graphics.hpp>
 // #include <Predator.hpp>
 
 class GameManager
@@ -22,7 +23,7 @@ class GameManager
         GameManager();
         GameManager(int numPreys, int numPredators, int windowWidth, int windowHeight);
 
-        void Start();
+        void Start(sf::RenderWindow &window);
         std::vector<GameObject> Update();
     protected:
     private:

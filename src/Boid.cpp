@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#define PI 3.14159265
+#define PI 3.14159265f
 
 Boid::Boid()
 {
@@ -18,7 +18,7 @@ void Boid::Update()
     // Update boid
     this->position += this->velocity;
     this->velocity += this->acceleration;
-    this->velocity = this->velocity.Normalized() * 5.0f;
+    this->velocity = this->velocity.Normalized() * 4.0f;
     this->acceleration *= 0;
 
     float angle = atan2(velocity.y, velocity.x);

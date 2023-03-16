@@ -30,9 +30,9 @@ void GameManager::Init(int numPreys, int numPredators, int windowWidth, int wind
 GameManager::GameManager() { Init(10, 1, 800, 600); }
 GameManager::GameManager(int numPreys, int numPredators, int windowWidth, int windowHeight) { Init(numPreys, numPredators, windowWidth, windowHeight); }
 
-void GameManager::Start()
+void GameManager::Start(sf::RenderWindow &window)
 {
-    // Don't spawn entities with borderMargin pixels of the boundary
+    // Don't spawn entities within borderMargin pixels of the boundary
     float borderMargin = 50.0f;
 
     bool boidSim = true;
@@ -47,7 +47,7 @@ void GameManager::Start()
         }
     } else {
         this->boidGame = BoidGame(this->windowWidth, this->windowHeight, &this->textures[2]);
-        this->boidGame.Start();
+        this->boidGame.Start(window);
     }
 }
 
