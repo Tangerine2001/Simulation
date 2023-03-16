@@ -6,8 +6,8 @@
 
 int main()
 {
-    int width = 800;
-    int height = 600;
+    int width = 1600;
+    int height = 900;
 
     sf::RenderWindow window(sf::VideoMode(width, height), "My window");
     window.setFramerateLimit(60);
