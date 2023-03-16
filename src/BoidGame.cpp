@@ -22,10 +22,10 @@ void BoidGame::Start(sf::RenderWindow &window)
 
     // Get a pointer to the texture. This will simplify the code below.
     sf::Texture *tex = this->texture;
-    float scale = 0.02f;
+    float scale = 0.015f;
 
     // Create numBoids boids
-    int numBoids = 50;
+    int numBoids = 200;
     for (int i = 0; i < numBoids; i++)
     {
         Boid boid;
@@ -44,9 +44,17 @@ std::vector<GameObject> BoidGame::Update()
     // Update boids
     for (Boid &boid : boids)
     {
-        TurnFromBorder(boid);
+        // TurnFromBorder(boid);
         HandleOutOfBounds(boid);
-        Align(boid);
+
+        Vector2 alignment = Align(boid);
+        Vector2 cohesion = Cohere(boid);
+        Vector2 separation = Separate(boid);
+
+        boid.acceleration += alignment * this->alignmentStrength;
+        boid.acceleration += cohesion * this->cohesionStrength;
+        boid.acceleration += separation * this->separationStrength;
+
         boid.Update();
         gameObjects.push_back(boid);
     }
@@ -83,7 +91,20 @@ void BoidGame::HandleOutOfBounds(Boid &boid)
     if (boid.position.y < 0) { boid.position.y = windowHeight; }
 }
 
-void BoidGame::Align(Boid &boid)
+Vector2 BoidGame::AdjustSteering(Vector2 steeringForce, Vector2 velocity)
+{
+    // Normalize the steering force to max speed.
+    steeringForce = steeringForce.Normalized() * this->maxBoidSpeed - velocity;
+
+    // Limit the steering force to max force.
+    if (steeringForce.Length() > this->maxBoidForce)
+    {
+        steeringForce = steeringForce.Normalized() * this->maxBoidForce;
+    }
+    return steeringForce;
+}
+
+Vector2 BoidGame::Align(Boid &boid)
 {
     // Get the average velocity of all boids within the alignment radius.
     Vector2 averageVelocity(0, 0);
@@ -93,7 +114,7 @@ void BoidGame::Align(Boid &boid)
         if (&otherBoid != &boid)
         {
             float distance = Vector2::Distance(boid.position, otherBoid.position);
-            if (distance < alignRadius)
+            if (distance < this->alignmentRadius)
             {
                 averageVelocity += otherBoid.velocity;
                 numBoids++;
@@ -102,17 +123,72 @@ void BoidGame::Align(Boid &boid)
     }
 
     // If there are no boids within the alignment radius, return.
-    if (numBoids == 0) { return; }
+    if (numBoids == 0) { return averageVelocity; }
 
-    // Get the average velocity and normalize it to max speed.
+    // Get the average velocity and steering force.
     averageVelocity /= numBoids;
-    averageVelocity = averageVelocity.Normalized() * this->maxBoidSpeed;
+    Vector2 steeringForce = AdjustSteering(averageVelocity, boid.velocity);
 
-    // Calculate the steering force
-    Vector2 steeringForce = averageVelocity - boid.velocity;
+    return steeringForce;
+}
 
-    // Add the steering force to the boid's acceleration
-    boid.acceleration += steeringForce;
+Vector2 BoidGame::Cohere(Boid &boid) 
+{
+    // Get the average position of all boids within the cohesion radius.
+    Vector2 averagePosition(0, 0);
+    int numBoids = 0;
+    for (Boid &otherBoid : this->boids)
+    {
+        if (&otherBoid != &boid)
+        {
+            float distance = Vector2::Distance(boid.position, otherBoid.position);
+            if (distance < this->cohesionRadius)
+            {
+                averagePosition += otherBoid.position;
+                numBoids++;
+            }
+        }
+    }
+
+    // If there are no boids within the cohesion radius, return.
+    if (numBoids == 0) { return averagePosition; }
+
+    // Get the average position and steering force.
+    averagePosition /= numBoids;
+    Vector2 steeringForce = AdjustSteering(averagePosition - boid.position, boid.velocity);
+
+    return steeringForce;
+}
+
+Vector2 BoidGame::Separate(Boid &boid)
+{
+    Vector2 steering(0, 0);
+    int numBoids = 0;
+    for (Boid &otherBoid : this->boids)
+    {
+        if (&otherBoid != &boid)
+        {
+            float distance = Vector2::Distance(boid.position, otherBoid.position);
+            if ((distance < this->separationRadius) && (distance > 0))
+            {
+                // Calculate the steering force
+                Vector2 steeringForce = boid.position - otherBoid.position;
+                if (distance < this->separationStrength) steeringForce *= this->separationStrength / (distance * distance);
+
+                // Add the steering force to the boid's acceleration
+                steering += steeringForce;
+                numBoids++;
+            }
+        }
+    }
+
+    // If there are no boids within the separation radius, return.
+    if (numBoids == 0) { return steering; }
+
+    // Get the average steering force.
+    steering /= numBoids;
+    steering = AdjustSteering(steering, boid.velocity);
+    return steering;
 }
 
 /////////////////////////
