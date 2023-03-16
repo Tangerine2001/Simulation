@@ -59,10 +59,7 @@ void BoidGame::HandleOutOfBounds(Boid &boid)
     Vector2 raycastEnd = boid.position + raycast;
 
     // Draw the raycast for debugging purposes
-    sf::VertexArray raycastLine(sf::LinesStrip, 2);
-    raycastLine[0].position = sf::Vector2f(boid.position.x, boid.position.y);
-    raycastLine[1].position = sf::Vector2f(raycastEnd.x, raycastEnd.y);
-    this->window->draw(raycastLine);
+    // DrawLine(boid.position, raycastEnd, sf::Color::Red);
 
     // Create a bounds adjustment vector that redirects the boid towards the center of the window if the raycast is out of bounds.
     Vector2 boundsAdjustment(0, 0);
@@ -73,4 +70,15 @@ void BoidGame::HandleOutOfBounds(Boid &boid)
 
     // Add the adjustment vector to the boid's acceleration
     boid.acceleration += boundsAdjustment;
+}
+
+void BoidGame::DrawLine(Vector2 start, Vector2 end, sf::Color color)
+{
+    // Draw a line between two points. Used for debugging mainly.
+    sf::VertexArray line(sf::LinesStrip, 2);
+    line[0].position = sf::Vector2f(start.x, start.y);
+    line[1].position = sf::Vector2f(end.x, end.y);
+    line[0].color = color;
+    line[1].color = color;
+    this->window->draw(line);
 }
