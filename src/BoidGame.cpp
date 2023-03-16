@@ -44,6 +44,7 @@ std::vector<GameObject> BoidGame::Update()
     // Update boids
     for (Boid &boid : boids)
     {
+        TurnFromBorder(boid);
         HandleOutOfBounds(boid);
         boid.Update();
         gameObjects.push_back(boid);
@@ -52,7 +53,7 @@ std::vector<GameObject> BoidGame::Update()
     return gameObjects;
 }
 
-void BoidGame::HandleOutOfBounds(Boid &boid)
+void BoidGame::TurnFromBorder(Boid &boid)
 {
     // Make a forward facing raycast to check if the boid will be out of bounds. Length of raycast should be 100 pixels.
     Vector2 raycast = boid.velocity.Normalized() * 200.0f;
@@ -72,6 +73,18 @@ void BoidGame::HandleOutOfBounds(Boid &boid)
     boid.acceleration += boundsAdjustment;
 }
 
+void BoidGame::HandleOutOfBounds(Boid &boid)
+{
+    // If the boid is out of bounds, teleport it to the opposite side of the window.
+    if (boid.position.x > windowWidth) { boid.position.x = 0; }
+    if (boid.position.x < 0) { boid.position.x = windowWidth; }
+    if (boid.position.y > windowHeight) { boid.position.y = 0; }
+    if (boid.position.y < 0) { boid.position.y = windowHeight; }
+}
+
+/////////////////////////
+// Debugging functions //
+/////////////////////////
 void BoidGame::DrawLine(Vector2 start, Vector2 end, sf::Color color)
 {
     // Draw a line between two points. Used for debugging mainly.

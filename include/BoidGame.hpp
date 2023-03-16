@@ -24,6 +24,7 @@ class BoidGame
         std::vector<Boid> boids;
 
         void HandleOutOfBounds(Boid &boid);
+        void TurnFromBorder(Boid &boid);
         void DrawLine(Vector2 start, Vector2 end, sf::Color color = sf::Color::White);
 };
 
