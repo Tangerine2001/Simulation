@@ -4,6 +4,7 @@
 #include <TGUI/TGUI.hpp>    // This include SFML/Graphics.hpp for us
 #include <GameManager.hpp>
 #include <FPSCounter.hpp>
+#include <ParameterSlider.hpp>
 // #include <Vector2.hpp>
 
 int main()
@@ -25,6 +26,29 @@ int main()
     button->setPosition(700, 800);
     button->onClick.connect([&](){ startGame = !startGame; });
     gui.add(button, "button");
+
+    // tgui::Slider::Ptr alignmentStrength = tgui::Slider::create();
+    // alignmentStrength->setSize(50, 10);
+    // alignmentStrength->setPosition(100, 100);
+    // alignmentStrength->setMinimum(0.0f);
+    // alignmentStrength->setMaximum(10.0f);
+    // alignmentStrength->setValue(10);
+    // alignmentStrength->setStep(0.1f);
+    // gui.add(alignmentStrength, "alignmentStrength");
+
+    // tgui::Label::Ptr alignmentStrengthLabel = tgui::Label::create();
+    // alignmentStrengthLabel->setText("Alignment strength");
+    // alignmentStrengthLabel->setPosition(100, 80);
+    // gui.add(alignmentStrengthLabel, "alignmentStrengthLabel");
+
+    // tgui::Label::Ptr alignmentStrengthValue = tgui::Label::create();
+    // alignmentStrengthValue->setText(std::to_string(alignmentStrength->getValue()));
+    // alignmentStrengthValue->setPosition(100, 120);
+    // gui.add(alignmentStrengthValue, "alignmentStrengthValue");
+
+    // ParameterSlider alignmentParam;
+    ParameterSlider alignmentParam(gui, "Alignment strength", 0.0f, 10.0f, 0.1f, 10.0f, Vector2(100, 100), Vector2(100, 10));
+
 
     FPSCounter fpscounter(width);
 
@@ -55,6 +79,7 @@ int main()
 
         window.draw(fpscounter.GetFPS());
 
+        // alignmentStrengthValue->setText(std::to_string(alignmentStrength->getValue()));
         gui.draw();
         window.display();
     }

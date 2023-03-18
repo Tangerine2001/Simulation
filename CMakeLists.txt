@@ -18,10 +18,8 @@ endif()
 
 set(SOURCES src/main.cpp)
 file(GLOB SOURCES src/*.cpp)
-set(HEADERS include/Boid.hpp)
-file(GLOB HEADERS include/*.hpp)
 
-add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+add_executable(${PROJECT_NAME} ${SOURCES})
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
 
 target_link_libraries(${PROJECT_NAME} sfml-graphics tgui)

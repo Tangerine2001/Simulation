@@ -330,18 +330,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\FPSCounter.cpp" />
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\GameManager.cpp" />
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\GameObject.cpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\ParameterSlider.cpp" />
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\Prey.cpp" />
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\Random.cpp" />
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\Vector2.cpp" />
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\main.cpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\Boid.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\BoidGame.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\FPSCounter.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\GameManager.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\GameObject.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\Prey.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\Random.hpp" />
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\Vector2.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\ZERO_CHECK.vcxproj">

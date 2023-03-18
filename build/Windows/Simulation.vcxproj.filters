@@ -16,6 +16,9 @@
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\GameObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\ParameterSlider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\Prey.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -30,38 +33,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\Boid.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\BoidGame.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\FPSCounter.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\GameManager.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\GameObject.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\Prey.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\Random.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\Vector2.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <CustomBuild Include="C:\Users\maxta\VSCodeProjects\Simulation\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{353D911F-D828-3989-8C9A-7B013C2D8370}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{215FBA32-1BD6-3C44-8559-14F07C302762}</UniqueIdentifier>
     </Filter>
