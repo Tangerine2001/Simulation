@@ -15,11 +15,11 @@ void GameManager::Init(int numPreys, int numPredators, int windowWidth, int wind
     this->windowHeight = windowHeight;
     
     sf::Texture preyTexture;
-    preyTexture.loadFromFile("../assets/prey0.png");
+    preyTexture.loadFromFile("assets/prey0.png");
     sf::Texture predatorTexture;
-    predatorTexture.loadFromFile("../assets/prey0.png");
+    predatorTexture.loadFromFile("assets/prey0.png");
     sf::Texture boidTexture;
-    boidTexture.loadFromFile("../assets/boid.png");
+    boidTexture.loadFromFile("assets/boid.png");
 
     this->textures = std::vector<sf::Texture>();
     this->textures.push_back(preyTexture);

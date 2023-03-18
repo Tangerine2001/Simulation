@@ -1,5 +1,5 @@
 #include <Vector2.hpp>
-#include <math.h>
+#include <cmath>
 
 Vector2::Vector2()
 {
@@ -92,5 +92,5 @@ float Vector2::AngleBetween(Vector2 vec1, Vector2 vec2)
 
 float Vector2::Distance(Vector2 vec1, Vector2 vec2)
 {
-    return sqrt(pow(vec2.x - vec1.x, 2) + pow(vec2.y - vec1.y, 2));
+    return sqrt((float) pow(vec2.x - vec1.x, 2) + (float) pow(vec2.y - vec1.y, 2));
 }

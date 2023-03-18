@@ -1,7 +1,9 @@
 #include <iostream>
 
 #include <SFML/Graphics.hpp>
+#include <TGUI/TGUI.hpp>    // This include SFML/Graphics.hpp for us
 #include <GameManager.hpp>
+#include <FPSCounter.hpp>
 // #include <Vector2.hpp>
 
 int main()
@@ -12,23 +14,14 @@ int main()
     sf::RenderWindow window(sf::VideoMode(width, height), "My window");
     window.setFramerateLimit(60);
 
-    sf::Font font;
-    font.loadFromFile("../assets/arial.ttf");
+    tgui::Gui gui(window);
+    tgui::Button::Ptr button = tgui::Button::create("Start");
+    gui.add(button, "button");
 
-    sf::Text fpsCounter;
-    fpsCounter.setFont(font);
-    fpsCounter.setCharacterSize(16);
-    fpsCounter.setFillColor(sf::Color::White);
-    fpsCounter.setPosition(((float) width / 2.0f) - 70, 10);
+    FPSCounter fpscounter(width);
 
-    sf::Clock clock;
-    float lastTime = 0.0f;
-    float currentTime = 0.0f;
-    float fpsUpdateInterval = 0.6f;
-    int frames = 0;
-
-    GameManager gameManager(10, 1, width, height);
-    gameManager.Start(window);
+    // GameManager gameManager(10, 1, width, height);
+    // gameManager.Start(window);
 
     while (window.isOpen())
     {
@@ -38,25 +31,20 @@ int main()
             {
                 window.close();
             }
+
+            gui.handleEvent(event);
         }
         window.clear();
 
-        std::vector<GameObject> gameObjects = gameManager.Update();
-        for (GameObject gameObject : gameObjects)
-        {
-            window.draw(gameObject.sprite);
-        }
+        // std::vector<GameObject> gameObjects = gameManager.Update();
+        // for (GameObject gameObject : gameObjects)
+        // {
+        //     window.draw(gameObject.sprite);
+        // }
 
-        frames++;
-        currentTime = clock.getElapsedTime().asSeconds();
-        if ((currentTime - lastTime) > fpsUpdateInterval)
-        {
-            fpsCounter.setString("FPS: " + std::to_string((int) (frames/(currentTime - lastTime))));
-            lastTime = currentTime;
-            frames = 0;
-        }
-        window.draw(fpsCounter);
+        window.draw(fpscounter.GetFPS());
 
+        gui.draw();
         window.display();
     }
 }

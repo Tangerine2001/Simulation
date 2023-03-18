@@ -1,68 +1,33 @@
 cmake_minimum_required(VERSION 3.10)
 
-set(PROJECT_NAME "Simulation")
-set(SOURCE_DIR src)
-set(LIBS_DIR libs)
-set(INCLUDE_DIR include)
+project("Simulation" VERSION 1.0)
+set(SFML_STATIC_LIBRARIES TRUE)
+set(TGUI_STATIC_LIBRARIES TRUE)
+set(SFML_DIR libs/SFML-2.5.1/lib/cmake/SFML)
+set(TGUI_DIR libs/TGUI-0.9/lib/cmake/TGUI)
+find_package(SFML 2.5 COMPONENTS graphics REQUIRED)  # system window graphics network audio
+find_package(TGUI REQUIRED)
 
-set(SOURCES ${SOURCE_DIR}/main.cpp)
-file(GLOB SOURCES ${SOURCE_DIR}/*.cpp)
-# file(GLOB SOURCES ${SOURCE_DIR}/Boid/*.cpp)
-
-set(HEADERS ${INCLUDE_DIR}/GameObject.hpp)
-file(GLOB HEADERS ${INCLUDE_DIR}/*.hpp)
-# file(GLOB HEADERS ${INCLUDE_DIR}/Boid/*.hpp)
-
-project(${PROJECT_NAME} LANGUAGES CXX)
-
-# add_library(gameObjectLib ${SOURCE_DIR}/GameObject.cpp ${INCLUDE_DIR}/GameObject.hpp)
-# target_include_directories(gameObjectLib PRIVATE ${INCLUDE_DIR})
-# add_library(Vector2 ${SOURCE_DIR}/Vector2.cpp ${INCLUDE_DIR}/Vector2.hpp)
-# target_include_directories(Vector2 PRIVATE ${INCLUDE_DIR})
-# add_library(GameManagerLib ${SOURCE_DIR}/GameManager.cpp ${INCLUDE_DIR}/GameManager.hpp)
-# target_include_directories(GameManagerLib PRIVATE ${INCLUDE_DIR})
-# add_library(PreyLib ${SOURCE_DIR}/Prey.cpp ${INCLUDE_DIR}/Prey.hpp)
-# target_include_directories(PreyLib PRIVATE ${INCLUDE_DIR})
-
-# set(HEADER_FILES
-    # ${INCLUDE_DIR}/GameObject.hpp
-    # ${INCLUDE_DIR}/Vector2.hpp
-    # ${INCLUDE_DIR}/GameManager.hpp
-    # ${INCLUDE_DIR}/Prey.hpp
-# )
-
-# set(LIB_FILES
-#     gameObjectLib
-#     Vector2Lib
-#     GameManagerLib
-#     PreyLib
-# )
-
-# SFML
-include(FetchContent)
-FetchContent_Declare(SFML
-    GIT_REPOSITORY https://github.com/SFML/SFML.git
-    GIT_TAG 2.6.x)
-FetchContent_MakeAvailable(SFML)
-
-add_executable(${PROJECT_NAME} ${SOURCES})
-target_link_libraries(${PROJECT_NAME} PRIVATE sfml-graphics)
-target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
-if (WIN32 AND BUILD_SHARED_LIBS)
-    add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-        COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_RUNTIME_DLLS:${PROJECT_NAME}> $<TARGET_FILE_DIR:${PROJECT_NAME}> COMMAND_EXPAND_LISTS)
+if(NOT SFML_FOUND)
+    message(FATAL_ERROR "Could not find SFML")
 endif()
 
-install(TARGETS ${PROJECT_NAME})
+if(NOT TGUI_FOUND)
+    message(FATAL_ERROR "Could not find TGUI")
+endif()
 
-# Move the assets folder to the build directory
+set(SOURCES src/main.cpp)
+file(GLOB SOURCES src/*.cpp)
+set(HEADERS include/Boid.hpp)
+file(GLOB HEADERS include/*.hpp)
+
+add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
+
+target_link_libraries(${PROJECT_NAME} sfml-graphics tgui)
 add_custom_target(copy_assets
-    COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_LIST_DIR}/assets ${CMAKE_CURRENT_BINARY_DIR}/assets
+     COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_LIST_DIR}/assets ${CMAKE_CURRENT_BINARY_DIR}/Debug/assets
 )
 add_dependencies(${PROJECT_NAME} copy_assets)
 
-# target_include_directories(${PROJECT_NAME} PRIVATE ${HEADER_FILES})
-target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDE_DIR})
-# target_include_directories(${PROJECT_NAME} PUBLIC ${INCLUDE_DIR}/Boid)
-# target_include_directories(${SOURCES} PUBLIC build/_deps/sfml-src/include)
-# target_link_libraries(${PROJECT_NAME} PRIVATE Vector2Lib)
+target_include_directories(${PROJECT_NAME} PUBLIC include)

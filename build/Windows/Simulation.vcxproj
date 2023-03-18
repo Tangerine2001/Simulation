@@ -86,11 +86,13 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maxta/VSCodeProjects/Simulation/libs/SFML-2.5.1/include" /external:I "C:/Users/maxta/VSCodeProjects/Simulation/libs/TGUI-0.9/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>Disabled</Optimization>
@@ -99,35 +101,23 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SFML_STATIC;TGUI_STATIC;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;SFML_STATIC;TGUI_STATIC;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message></Message>
-      <Command>setlocal
-C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -E copy C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-build/lib/Debug/sfml-graphics-d-2.dll C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-build/lib/Debug/sfml-window-d-2.dll C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-build/lib/Debug/sfml-system-d-2.dll C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/Debug
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>_deps\sfml-build\lib\Debug\sfml-graphics-d.lib;_deps\sfml-build\lib\Debug\sfml-window-d.lib;_deps\sfml-build\lib\Debug\sfml-system-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-graphics-s-d.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\tgui-s-d.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-graphics-s-d.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-window-s-d.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-system-s-d.lib;winmm.lib;gdi32.lib;OpenGL32.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -142,9 +132,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maxta/VSCodeProjects/Simulation/libs/SFML-2.5.1/include" /external:I "C:/Users/maxta/VSCodeProjects/Simulation/libs/TGUI-0.9/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>MaxSpeed</Optimization>
@@ -153,37 +145,25 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;TGUI_STATIC;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;TGUI_STATIC;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message></Message>
-      <Command>setlocal
-C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -E copy C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-build/lib/Release/sfml-graphics-2.dll C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-build/lib/Release/sfml-window-2.dll C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-build/lib/Release/sfml-system-2.dll C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/Release
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>_deps\sfml-build\lib\Release\sfml-graphics.lib;_deps\sfml-build\lib\Release\sfml-window.lib;_deps\sfml-build\lib\Release\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-graphics-s.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\tgui-s.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-graphics-s.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-window-s.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-system-s.lib;winmm.lib;gdi32.lib;OpenGL32.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -198,9 +178,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maxta/VSCodeProjects/Simulation/libs/SFML-2.5.1/include" /external:I "C:/Users/maxta/VSCodeProjects/Simulation/libs/TGUI-0.9/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>MinSpace</Optimization>
@@ -209,37 +191,25 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;TGUI_STATIC;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;TGUI_STATIC;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message></Message>
-      <Command>setlocal
-C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -E copy C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-build/lib/MinSizeRel/sfml-graphics-2.dll C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-build/lib/MinSizeRel/sfml-window-2.dll C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-build/lib/MinSizeRel/sfml-system-2.dll C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/MinSizeRel
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>_deps\sfml-build\lib\MinSizeRel\sfml-graphics.lib;_deps\sfml-build\lib\MinSizeRel\sfml-window.lib;_deps\sfml-build\lib\MinSizeRel\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-graphics-s-d.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\tgui-s-d.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-graphics-s-d.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-window-s-d.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-system-s-d.lib;winmm.lib;gdi32.lib;OpenGL32.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -254,10 +224,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maxta/VSCodeProjects/Simulation/libs/SFML-2.5.1/include" /external:I "C:/Users/maxta/VSCodeProjects/Simulation/libs/TGUI-0.9/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <Optimization>MaxSpeed</Optimization>
@@ -266,35 +238,23 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;TGUI_STATIC;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;TGUI_STATIC;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\maxta\VSCodeProjects\Simulation\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\include;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
-    <PostBuildEvent>
-      <Message></Message>
-      <Command>setlocal
-C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -E copy C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-build/lib/RelWithDebInfo/sfml-graphics-2.dll C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-build/lib/RelWithDebInfo/sfml-window-2.dll C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/_deps/sfml-build/lib/RelWithDebInfo/sfml-system-2.dll C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/RelWithDebInfo
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-    </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>_deps\sfml-build\lib\RelWithDebInfo\sfml-graphics.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-window.lib;_deps\sfml-build\lib\RelWithDebInfo\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-graphics-s-d.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\tgui-s-d.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-graphics-s-d.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-window-s-d.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\sfml-system-s-d.lib;winmm.lib;gdi32.lib;OpenGL32.lib;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\freetype.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -320,7 +280,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeSystem.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FetchContent.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FetchContent\CMakeLists.cmake.in;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindGit.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeCCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeSystem.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLConfig.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLConfigDependencies.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLConfigVersion.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLStaticTargets-debug.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLStaticTargets-release.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLStaticTargets.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIConfig.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIConfigVersion.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIStaticTargets-debug.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIStaticTargets-release.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIStaticTargets.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simulation/CMakeLists.txt</Message>
@@ -333,7 +293,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeSystem.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FetchContent.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FetchContent\CMakeLists.cmake.in;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindGit.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeCCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeSystem.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLConfig.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLConfigDependencies.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLConfigVersion.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLStaticTargets-debug.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLStaticTargets-release.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLStaticTargets.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIConfig.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIConfigVersion.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIStaticTargets-debug.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIStaticTargets-release.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIStaticTargets.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simulation/CMakeLists.txt</Message>
@@ -346,7 +306,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeSystem.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FetchContent.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FetchContent\CMakeLists.cmake.in;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindGit.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeCCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeSystem.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLConfig.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLConfigDependencies.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLConfigVersion.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLStaticTargets-debug.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLStaticTargets-release.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLStaticTargets.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIConfig.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIConfigVersion.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIStaticTargets-debug.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIStaticTargets-release.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIStaticTargets.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/maxta/VSCodeProjects/Simulation/CMakeLists.txt</Message>
@@ -359,7 +319,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeSystem.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FetchContent.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FetchContent\CMakeLists.cmake.in;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindGit.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageHandleStandardArgs.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\FindPackageMessage.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeCCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeCXXCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeRCCompiler.cmake;C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\3.25.2\CMakeSystem.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLConfig.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLConfigDependencies.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLConfigVersion.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLStaticTargets-debug.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLStaticTargets-release.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\SFML-2.5.1\lib\cmake\SFML\SFMLStaticTargets.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIConfig.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIConfigVersion.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIStaticTargets-debug.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIStaticTargets-release.cmake;C:\Users\maxta\VSCodeProjects\Simulation\libs\TGUI-0.9\lib\cmake\TGUI\TGUIStaticTargets.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\tools\cmake-3.25.2-windows-x86_64\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
@@ -367,12 +327,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   <ItemGroup>
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\Boid.cpp" />
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\BoidGame.cpp" />
+    <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\FPSCounter.cpp" />
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\GameManager.cpp" />
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\GameObject.cpp" />
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\Prey.cpp" />
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\Random.cpp" />
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\Vector2.cpp" />
     <ClCompile Include="C:\Users\maxta\VSCodeProjects\Simulation\src\main.cpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\Boid.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\BoidGame.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\FPSCounter.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\GameManager.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\GameObject.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\Prey.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\Random.hpp" />
+    <ClInclude Include="C:\Users\maxta\VSCodeProjects\Simulation\include\Vector2.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\ZERO_CHECK.vcxproj">
@@ -386,18 +355,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Name>copy_assets</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
-    <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-build\src\SFML\Graphics\sfml-graphics.vcxproj">
-      <Project>{8AF67B8E-5A93-3C17-9CB7-86CA40FE88F7}</Project>
-      <Name>sfml-graphics</Name>
-    </ProjectReference>
-    <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-build\src\SFML\System\sfml-system.vcxproj">
-      <Project>{7E97B6CD-BB39-303F-8AA1-895C8D8598B8}</Project>
-      <Name>sfml-system</Name>
-    </ProjectReference>
-    <ProjectReference Include="C:\Users\maxta\VSCodeProjects\Simulation\build\Windows\_deps\sfml-build\src\SFML\Window\sfml-window.vcxproj">
-      <Project>{93CEA1EC-0619-3308-869E-17E9DD49C42A}</Project>
-      <Name>sfml-window</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

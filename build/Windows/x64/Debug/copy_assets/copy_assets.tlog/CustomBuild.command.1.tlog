@@ -1,6 +1,6 @@
 ^C:\USERS\MAXTA\VSCODEPROJECTS\SIMULATION\BUILD\WINDOWS\CMAKEFILES\94A4950E1C86B6BF3168405BE84208D1\COPY_ASSETS.RULE
 setlocal
-C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -E copy_directory C:/Users/maxta/VSCodeProjects/Simulation/assets C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/assets
+C:\tools\cmake-3.25.2-windows-x86_64\bin\cmake.exe -E copy_directory C:/Users/maxta/VSCodeProjects/Simulation/assets C:/Users/maxta/VSCodeProjects/Simulation/build/Windows/Debug/assets
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
