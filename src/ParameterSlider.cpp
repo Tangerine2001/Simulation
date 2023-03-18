@@ -12,7 +12,6 @@ void ParameterSlider::Init(tgui::Gui& gui, std::string name, float min, float ma
     this->label = tgui::Label::create();
     this->valueLabel = tgui::Label::create();
 
-    this->slider->setPosition(position.x, position.y);
     this->slider->setSize(size.x, size.y);
     this->slider->setMinimum(min);
     this->slider->setMaximum(max);
@@ -21,12 +20,12 @@ void ParameterSlider::Init(tgui::Gui& gui, std::string name, float min, float ma
     this->slider->onValueChange.connect([this] { UpdateValueLabel(); });
 
     this->label->setText(name);
-    this->label->setPosition(position.x, position.y - 20);
     this->label->setTextSize(16);
 
-    UpdateValueLabel();
-    this->valueLabel->setPosition(position.x, position.y + 20);
     this->valueLabel->setTextSize(16);
+
+    UpdateValueLabel();
+    SetPosition(position);
 
     this->gui->add(slider);
     this->gui->add(label);
@@ -36,8 +35,8 @@ void ParameterSlider::Init(tgui::Gui& gui, std::string name, float min, float ma
 void ParameterSlider::SetPosition(Vector2 position)
 {
     this->slider->setPosition(position.x, position.y);
-    this->label->setPosition(position.x, position.y - 20);
-    this->valueLabel->setPosition(position.x, position.y + 20);
+    this->label->setPosition(position.x + 5, position.y - 20);
+    this->valueLabel->setPosition(position.x + this->slider->getSize().x + 10, position.y - 5);
 }
 
 void ParameterSlider::UpdateValueLabel()
