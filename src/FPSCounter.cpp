@@ -23,15 +23,6 @@ FPSCounter::FPSCounter(int width)
 
 sf::Text FPSCounter::GetFPS()
 {
-    // this->currentTime = this->clock.getElapsedTime().asSeconds();
-    // if (this->currentTime - this->lastTime >= this->fpsUpdateInterval)
-    // {
-    //     this->fpsCounter.setString("FPS: " + std::to_string(this->frames));
-    //     this->frames = 0;
-    //     this->lastTime = this->currentTime;
-    // }
-    // this->frames++;
-    // 
     frames++;
     this->currentTime = clock.getElapsedTime().asSeconds();
     if ((this->currentTime - this->lastTime) >= this->fpsUpdateInterval)
