@@ -18,16 +18,16 @@ class GameManager
         // static inline std::vector<Predator> predators;
         std::vector<sf::Texture> textures;
 
-        void Init(int numPreys, int numPredators, int windowWidth, int windowHeight);
+        void Init(int numPreys, int numPredators, int windowWidth, int windowHeight, int borderWidth);
 
         GameManager();
-        GameManager(int numPreys, int numPredators, int windowWidth, int windowHeight);
+        GameManager(int numPreys, int numPredators, int windowWidth, int windowHeight, int borderWidth);
 
         void Start(sf::RenderWindow &window);
         std::vector<GameObject> Update();
     protected:
     private:
-        float boundaryMargin = 1.0f;
+        int borderWidth;
 
         BoidGame boidGame;
 

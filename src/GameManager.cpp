@@ -7,12 +7,13 @@
 
 #include <Boid.hpp>
 
-void GameManager::Init(int numPreys, int numPredators, int windowWidth, int windowHeight)
+void GameManager::Init(int numPreys, int numPredators, int windowWidth, int windowHeight, int borderWidth)
 {
     this->numPreys = numPreys;
     this->numPredators = numPredators;
     this->windowWidth = windowWidth;
     this->windowHeight = windowHeight;
+    this->borderWidth = borderWidth;
     
     sf::Texture preyTexture;
     preyTexture.loadFromFile("assets/prey0.png");
@@ -27,8 +28,8 @@ void GameManager::Init(int numPreys, int numPredators, int windowWidth, int wind
     this->textures.push_back(boidTexture);
 }
 
-GameManager::GameManager() { Init(10, 1, 800, 600); }
-GameManager::GameManager(int numPreys, int numPredators, int windowWidth, int windowHeight) { Init(numPreys, numPredators, windowWidth, windowHeight); }
+GameManager::GameManager() { Init(10, 1, 800, 600, borderWidth); }
+GameManager::GameManager(int numPreys, int numPredators, int windowWidth, int windowHeight, int borderWidth) { Init(numPreys, numPredators, windowWidth, windowHeight, borderWidth); }
 
 void GameManager::Start(sf::RenderWindow &window)
 {
@@ -75,22 +76,22 @@ std::vector<GameObject> GameManager::Update()
 
 void GameManager::HandleOutOfBounds(GameObject &gameObject)
 {
-    if (gameObject.position.x <= 0.0f - this->boundaryMargin)
+    if (gameObject.position.x <= 0.0f + this->borderWidth)
     {
-        gameObject.position.x = this->windowWidth;
+        gameObject.position.x = this->windowWidth - this->borderWidth;
     }
-    else if (gameObject.position.x >= (float)(this->windowWidth + this->boundaryMargin))
+    else if (gameObject.position.x >= (float)(this->windowWidth - this->borderWidth))
     {
-        gameObject.position.x = 0.0f;
+        gameObject.position.x = 0.0f + this->borderWidth;
     }
 
-    if (gameObject.position.y <= 0.0f - this->boundaryMargin)
+    if (gameObject.position.y <= 0.0f + this->borderWidth)
     {
-        gameObject.position.y = this->windowHeight;
+        gameObject.position.y = this->windowHeight - this->borderWidth;;
     }
-    else if (gameObject.position.y >= (float)(this->windowHeight + this->boundaryMargin))
+    else if (gameObject.position.y >= (float)(this->windowHeight + this->borderWidth))
     {
-        gameObject.position.y = 0.0f;
+        gameObject.position.y = 0.0f + this->borderWidth;
     }
 }
 

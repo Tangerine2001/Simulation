@@ -11,6 +11,7 @@ int main()
 {
     int width = 1600;
     int height = 900;
+    int borderWidth = 100;
     bool startGame = false;
 
     // TODO: Use this variable
@@ -33,7 +34,7 @@ int main()
 
     FPSCounter fpscounter(width);
 
-    GameManager gameManager(10, 1, width, height);
+    GameManager gameManager(10, 1, width, height, borderWidth);
     gameManager.Start(window);
 
     while (window.isOpen())
